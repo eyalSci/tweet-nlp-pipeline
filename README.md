@@ -26,12 +26,9 @@ This project maps closely to applied NLP work in industrial settings: turning la
 
 ```
 tweet-election-sentiment/
-├── data/                   # Place downloaded CSVs here (git-ignored due to size)
-├── notebooks/
-│   └── analysis.ipynb      # Full pipeline: preprocessing → VADER → ABSA → prediction → visualisation
-├── src/
-│   ├── preprocessing.py    # Reusable tweet cleaning and target extraction module
-│   └── absa_sentiment.py   # ABSA inference pipeline (CLI script)
+│── analysis.ipynb      # Full pipeline: preprocessing → VADER → ABSA → prediction → visualisation
+│── preprocessing.py    # Reusable tweet cleaning and target extraction module
+│── absa_sentiment.py   # ABSA inference pipeline (CLI script)
 ├── .gitignore
 ├── requirements.txt
 └── README.md
