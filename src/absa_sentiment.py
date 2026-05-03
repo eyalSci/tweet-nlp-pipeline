@@ -15,7 +15,7 @@ import torch
 from pyabsa import AspectPolarityClassification as APC
 from tqdm import tqdm
 
-from preprocessing import load_and_filter_tweets, prepare_for_sentiment
+from tweet_preprocessing import load_and_filter_tweets, prepare_for_sentiment
 
 warnings.filterwarnings("ignore")
 
