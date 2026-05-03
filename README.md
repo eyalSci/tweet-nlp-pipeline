@@ -32,7 +32,6 @@ tweet-election-sentiment/
 ├── src/
 │   ├── preprocessing.py    # Reusable tweet cleaning and target extraction module
 │   └── absa_sentiment.py   # ABSA inference pipeline (CLI script)
-├── .gitignore
 ├── requirements.txt
 └── README.md
 ```
