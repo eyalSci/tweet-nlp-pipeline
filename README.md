@@ -26,12 +26,12 @@ This project maps closely to applied NLP work in industrial settings: turning la
 
 ```
 tweet-election-sentiment/
-├── data/                   # Place downloaded CSVs here (git-ignored due to size)
+├── data/                         # Place downloaded CSVs here (git-ignored due to size)
 ├── notebooks/
-│   └── analysis.ipynb      # Full pipeline: preprocessing → VADER → ABSA → prediction → visualisation
+│   └── analysis.ipynb            # Full pipeline: tweet_preprocessing → VADER → ABSA → prediction → visualisation
 ├── src/
-│   ├── preprocessing.py    # Reusable tweet cleaning and target extraction module
-│   └── absa_sentiment.py   # ABSA inference pipeline (CLI script)
+│   ├── tweet_preprocessing.py    # Reusable tweet cleaning and target extraction module
+│   └── absa_sentiment.py         # ABSA inference pipeline (CLI script)
 ├── requirements.txt
 └── README.md
 ```
@@ -119,7 +119,7 @@ A Multinomial Naïve Bayes classifier trained on TF-IDF features achieves **61% 
 | Skill | Where |
 |---|---|
 | Python (pandas, scikit-learn, NLTK, spaCy) | Throughout |
-| Text preprocessing pipeline design | `src/preprocessing.py` |
+| Text preprocessing pipeline design | `src/tweet_preprocessing.py` |
 | TF-IDF vectorisation and keyword selection | `notebooks/analysis.ipynb` §4 |
 | Transformer-based aspect extraction (PyABSA) | `src/absa_sentiment.py` |
 | Document classification (Naïve Bayes) | `notebooks/analysis.ipynb` §4 |
