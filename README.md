@@ -26,9 +26,13 @@ This project maps closely to applied NLP work in industrial settings: turning la
 
 ```
 tweet-election-sentiment/
-│── analysis.ipynb      # Full pipeline: preprocessing → VADER → ABSA → prediction → visualisation
-│── preprocessing.py    # Reusable tweet cleaning and target extraction module
-│── absa_sentiment.py   # ABSA inference pipeline (CLI script)
+├── data/                   # Place downloaded CSVs here (git-ignored due to size)
+├── notebooks/
+│   └── analysis.ipynb      # Full pipeline: preprocessing → VADER → ABSA → prediction → visualisation
+├── src/
+│   ├── preprocessing.py    # Reusable tweet cleaning and target extraction module
+│   └── absa_sentiment.py   # ABSA inference pipeline (CLI script)
+├── .gitignore
 ├── requirements.txt
 └── README.md
 ```
@@ -100,8 +104,8 @@ State-level sentiment scores (derived from aggregated keywords and ABSA outputs)
 
 | Method | Biden r | Trump r |
 |---|---|---|
-| VADER (lexicon-based) | 0.38 | 0.34 |
-| ABSA (transformer, zero-shot) | 0.21 | 0.13 |
+| VADER (lexicon-based) | 0.38 | 0.32 |
+| ABSA (transformer, zero-shot) | 0.33 | 0.05 |
 
 VADER outperforms zero-shot ABSA here, consistent with the known limitation of applying general-purpose transformer models to specialised domains without fine-tuning - a relevant consideration for industrial keyword extraction tasks.
 
