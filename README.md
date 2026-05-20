@@ -125,9 +125,3 @@ A Multinomial Naïve Bayes classifier trained on TF-IDF features achieves **61% 
 | Document classification (Naïve Bayes) | `notebooks/analysis.ipynb` §4 |
 | Relationship visualisation (time series, maps, word charts) | `notebooks/analysis.ipynb` §2–3 |
 | Structured documentation and reproducible code | All files |
-
----
-
-## Authors
-
-Eyal Gavrielov & Cristina Man - University of Twente, Enschede
